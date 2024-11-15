@@ -1,0 +1,33 @@
+---
+- hosts: validators
+  gather_facts: true
+  vars_prompt:
+  - name: address
+    prompt: "Enter Validator IP"
+    private: no
+  tasks:
+  - name: Fetch Validator Private Key"
+    ansible.builtin.shell:
+      cmd: "ls -l | grep UTC | awk '{print $9}'"
+      chdir: /extra/lemon/data/keystore
+    register: content
+
+  - name: "Display Content"
+    ansible.builtin.debug:
+      msg: "{{ content.stdout_lines }}"
+
+  - name: "Create Directories with validators"
+    ansible.builtin.file:
+      path: "{{ lookup('env', 'PWD') }}/{{ ansible_hostname }}"
+      state: directory
+      mode: 0777
+    delegate_to: localhost
+    when: inventory_hostname  == "{{ address }}"
+
+  - name: "Copy private key file to Ansible Host"
+    ansible.builtin.fetch:
+      src: "/extra/lemon/data/keystore/{{ content.stdout }}"
+      dest: "{{ lookup('env', 'PWD') }}/{{ ansible_hostname }}/wallet-validator.json"
+      flat: true
+    when: inventory_hostname  == "{{ address }}"
+

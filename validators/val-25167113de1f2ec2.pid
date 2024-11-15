@@ -1,0 +1,17 @@
+173.231.225.178 | CHANGED | rc=0 >>
+80741
+
+[0;32mOpera Service Running With PID
+-----------
+[0;32m80741
+-----------
+
+Process Details
+-----------
+[0;32mubuntu     80741   80739 43 20:23 ?        00:00:15 /home/ubuntu/go-opera/build/opera --genesis /extra/genesis-lemon.g --genesis.allowExperimental --validator.id 195 --validator.pubkey 0xc004f32e397ecd622115dfc168c2d44d9074d8e60e7132d4c50160eb88a5a9ab2598cff315fd18bacb15f042142ba78880973abb1289b7b2b6a4cc0c48adf365dd16 --validator.password /extra/lemon/password --syncmode full --cache 4096 --db.preset=ldb-1 --nat extip:173.231.225.178 --datadir=/extra/lemon/data --metrics --metrics.addr=0.0.0.0 --metrics.port=6060 --bootnodes enode://2c4dbe91211158e21052f0edd082ade3a8b0a49a98fe71e07674a5e3b21a4b18be9b27763680b5df999b06a46788f163bc0fe720428e039a8c808914bc1912eb@51.20.98.124:5050,enode://6add2faf1cdf3349df9c520ef51afc14c29d4e56bbc9cd27c01b82d03fa6cf7a421041f0fe1129e249096ce61798bd90332f29a57b7c53e21c4f43f5d0fa7357@54.183.88.44:5050
+-----------
+
+[0;32mNODE STATUS
+-----------
+val-25167113de1f2ec2 is running in [0;32m VALIDATOR MODE
+-----------

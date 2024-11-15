@@ -1,0 +1,24 @@
+173.231.224.143 | CHANGED | rc=0 >>
+3376128
+JSON File
+-----------
+{"address":"6d25fcc65151f09598bc2707b3bbb8e21e3825f0","crypto":{"cipher":"aes-128-ctr","ciphertext":"7075e6ebd5b18311fa006e0c09bbddf737eda5aa6ecc018f6d95e06262d5f67a","cipherparams":{"iv":"d3720b879658639ed22bd4572f668b2a"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"1f23d825efa9a40edea530ce25d74c4e1edff6eecae86f132c445190f5cb4570"},"mac":"60639219fa782b64f339e21f0b3cfa725c98572ec92009bd06a35f039fe221b3"},"id":"b2ab8d70-9a18-424e-86ab-06627d051226","version":3}
+Opera Service Running With PID
+-----------
+3376128
+JSON File
+-----------
+{"address":"6d25fcc65151f09598bc2707b3bbb8e21e3825f0","crypto":{"cipher":"aes-128-ctr","ciphertext":"7075e6ebd5b18311fa006e0c09bbddf737eda5aa6ecc018f6d95e06262d5f67a","cipherparams":{"iv":"d3720b879658639ed22bd4572f668b2a"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"1f23d825efa9a40edea530ce25d74c4e1edff6eecae86f132c445190f5cb4570"},"mac":"60639219fa782b64f339e21f0b3cfa725c98572ec92009bd06a35f039fe221b3"},"id":"b2ab8d70-9a18-424e-86ab-06627d051226","version":3}
+-----------
+
+Process Details
+-----------
+ubuntu   3376128 3376126 33 14:17 ?        01:05:41 /home/ubuntu/go-opera/build/opera --genesis /extra/genesis-lemon.g --genesis.allowExperimental --validator.id 535 --validator.pubkey 0xc0049c4d0a56ee65cc25232d57620db0b4eb4198b0cb20fe7a889b96bd7208512aab5674be48b0e7cdb9122748e23ecff96d385bf4c97dd56d5f739c2f3bf42c9095 --validator.password /extra/lemon/password --syncmode full --cache 4096 --db.preset=ldb-1 --nat extip:173.231.224.143 --datadir=/extra/lemon/data --metrics --metrics.addr=0.0.0.0 --metrics.port=6060 --bootnodes enode://2c4dbe91211158e21052f0edd082ade3a8b0a49a98fe71e07674a5e3b21a4b18be9b27763680b5df999b06a46788f163bc0fe720428e039a8c808914bc1912eb@51.20.98.124:5050,enode://6add2faf1cdf3349df9c520ef51afc14c29d4e56bbc9cd27c01b82d03fa6cf7a421041f0fe1129e249096ce61798bd90332f29a57b7c53e21c4f43f5d0fa7357@54.183.88.44:5050
+ubuntu   3403452 3403451  0 17:33 ?        00:00:00 bash -c sudo ps -ef | grep 3376128 JSON File ----------- {"address":"6d25fcc65151f09598bc2707b3bbb8e21e3825f0","crypto":{"cipher":"aes-128-ctr","ciphertext":"7075e6ebd5b18311fa006e0c09bbddf737eda5aa6ecc018f6d95e06262d5f67a","cipherparams":{"iv":"d3720b879658639ed22bd4572f668b2a"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"1f23d825efa9a40edea530ce25d74c4e1edff6eecae86f132c445190f5cb4570"},"mac":"60639219fa782b64f339e21f0b3cfa725c98572ec92009bd06a35f039fe221b3"},"id":"b2ab8d70-9a18-424e-86ab-06627d051226","version":3} | grep -v grep
+ubuntu   3403454 3403452  0 17:33 ?        00:00:00 grep 3376128
+-----------
+
+ STATUS
+-----------
+val-1696710e7a1b77f6 is running in VALIDATOR MODE
+-----------

@@ -1,0 +1,13 @@
+clouds:
+  openstack:
+    auth:
+      auth_url: https://uswc1.infra.conves.io:5000
+      username: "whmcsadmin"
+      password: NAwnkG_@(i39Pz9`9,xQ
+      project_id: 61fb416a86454a628bc19d5d2ca10304
+      project_name: "vortex"
+      user_domain_name: "Default"
+    region_name: "LAX3"
+    interface: "public"
+    identity_api_version: 3
+

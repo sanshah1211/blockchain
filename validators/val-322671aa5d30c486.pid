@@ -1,0 +1,7 @@
+173.231.224.65 | FAILED | rc=1 >>
+non-zero return code
+
+Lastest Block Number
+-----------
+Fatal: Unable to attach to remote opera: dial unix /extra/lemon/data/opera.ipc: connect: no such file or directory
+-----------

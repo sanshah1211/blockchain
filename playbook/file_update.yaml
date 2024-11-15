@@ -1,0 +1,68 @@
+---
+- hosts: all
+  gather_facts: true
+  tasks:
+#  - name: "Copy webserver directory"
+#    ansible.builtin.copy:
+#      src: /home/rocky/webserver/
+#      dest: /home/ubuntu/webserver/
+#      owner: ubuntu
+#      group: ubuntu
+#      mode: '0755'
+#    become: yes
+#    become_user: root
+#       
+#  - name: "Copy Validator Initialization Script"
+#    ansible.builtin.copy:
+#      src: /home/rocky/validator_int.sh
+#      dest: /home/ubuntu/
+#      owner: ubuntu
+#      group: ubuntu
+#      mode: '0755'
+#
+#  - name: "Copy Validator Initialization Script"
+#    ansible.builtin.copy:
+#      src: /home/rocky/validator_int.sh
+#      dest: /home/ubuntu/
+#      owner: ubuntu
+#      group: ubuntu
+#      mode: '0755'
+#
+#  - name: "Copy Validator Initialization Script"
+#    ansible.builtin.copy:
+#      src: /home/rocky/webserver.service
+#      dest: /lib/systemd/system/
+#      owner: root
+#      group: root
+#      mode: '0755'
+#    become: yes
+#    become_user: root
+
+#  - name: "Fix buggy lines in start_node.bash script"
+#    ansible.builtin.replace:
+#      path: /home/ubuntu/start_node.bash
+#      regexp: '$(sudo pkill -e -SIGINT opera)'
+#      replace: '$(pkill -e -SIGINT opera)'
+
+  - name: "Update code to start_node.bash"
+    ansible.builtin.lineinfile:
+      path: /home/ubuntu/start_node.bash
+      insertafter: '^public_key='
+      firstmatch: true
+      regexp: '{{ item }}'
+      line: '{{ item }}'
+      state: absent
+    with_items:
+      - port=5050
+      - maxpeers=100
+
+#  - name: "Restart Webserver to reflect the changes"
+#    ansible.builtin.systemd_service:
+#      name: webserver
+#      daemon-reload: true
+#      enabled: true
+#      masked: no
+#      state: restarted
+#    become: true
+#    become_user: root 
+          
